@@ -11,7 +11,7 @@ questions:
   show_subquestion_if: false
   subquestions:
   - variable: elasticsearch.image.repository
-    default: "docker.elastic.co/elasticsearch/elasticsearch-oss"
+    default: "elasticsearch"
     description: "Elasticsearch image name"
     type: string
     label: ElasticSearch Image Name
@@ -21,7 +21,7 @@ questions:
     type: string
     label: Elasticsearch Image Tag
   - variable: kibana.image.repository
-    default: "docker.elastic.co/kibana/kibana-oss"
+    default: "kibana"
     description: "Kibana image name"
     type: string
     label: Kibana Image Name
@@ -72,7 +72,7 @@ questions:
   group: "elasticsearch"
   subquestions:
   - variable: elasticsearch.master.persistence.storageClass
-    default: ""
+    default: "glusterfs"
     description: "If undefined or set to null, using the default StorageClass. Defaults to null."
     type: storageclass
     label: Storage Class for Elasticsearch
