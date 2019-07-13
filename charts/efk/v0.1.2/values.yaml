@@ -8,7 +8,7 @@ elasticsearch:
   securityContextEnable: true
 
   image:
-    repository: "docker.elastic.co/elasticsearch/elasticsearch-oss"
+    repository: "elasticsearch"
     tag: "6.2.4"
     pullPolicy: "IfNotPresent"
 
@@ -64,7 +64,7 @@ kibana:
   proxyEnabled: true
 
   image:
-    repository: "docker.elastic.co/kibana/kibana-oss"
+    repository: "kibana"
     tag: "6.2.4"
     pullPolicy: "IfNotPresent"
 
